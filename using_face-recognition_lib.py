@@ -54,8 +54,7 @@ while rval:
             face_distances = face_recognition.face_distance(
                 known_face_encodings, face_encoding
             )
-            # best_match_index = np.argmin(face_distances)
-            best_match_index = 0
+            best_match_index = np.argmin(face_distances)
             face_names.append(known_face_names[best_match_index])
 
         # Draw stuff
